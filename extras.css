@@ -1,0 +1,32 @@
+/* Crypto News — site-specific additions on top of the template stylesheet */
+
+/* Navbar dropdown menu */
+.nav-menu { display: flex; flex-direction: column; gap: 0.25rem; padding: 0 0.75rem 0.75rem; }
+.nav-menu[hidden] { display: none; }
+.nav-menu a { padding: 0.5rem 0.75rem; border-radius: 0.25rem; font-size: 0.95rem; transition: background-color 0.2s; }
+.nav-menu a:hover { background: color-mix(in srgb, currentColor 8%, transparent); }
+#menu-toggle svg { transition: transform 0.3s ease; }
+#menu-toggle[aria-expanded="true"] svg { transform: rotate(45deg); }
+
+/* FAQ accordion */
+.faq-answer { padding-top: 0.75rem; font-size: 1rem; line-height: 1.55; opacity: 0.85; }
+.faq-answer[hidden] { display: none; }
+.faq-item svg { transition: transform 0.3s ease; }
+
+/* Article / policy pages */
+.page-main { padding-top: 8.5rem; padding-bottom: 2rem; }
+.article-wrap { max-width: 56rem; }
+.article-title { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 600; line-height: 1.15; text-wrap: balance; }
+.article-meta { font-size: 0.9rem; opacity: 0.7; }
+.article-card { padding: 1.5rem; margin-top: 1rem; }
+@media (min-width: 768px) { .article-card { padding: 2.5rem; } }
+.article-card h2 { font-size: 1.4rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+.article-card h2:first-child { margin-top: 0; }
+.article-card p { margin: 0.5rem 0; line-height: 1.6; opacity: 0.9; }
+.article-card ul { margin: 0.5rem 0 0.5rem 1.25rem; list-style: disc; line-height: 1.7; opacity: 0.9; }
+.article-card a { text-decoration: underline; text-underline-offset: 2px; }
+.article-sources { margin-top: 1.75rem; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
+.article-disclaimer { margin-top: 1.25rem; font-size: 0.85rem; opacity: 0.65; }
+
+/* Advertising / sponsored labels */
+.ad-label { display: inline-block; padding: 0.15rem 0.5rem; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid color-mix(in srgb, currentColor 30%, transparent); border-radius: 0.25rem; opacity: 0.75; text-decoration: none; }
